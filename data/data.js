@@ -1,6 +1,6 @@
 export let data = {
-    counterValue: 0,
-    title: 'Counter'
+    currentValue: 0,
+    maxValue: 10
 }
 
 function onChangeCallback() {
@@ -8,11 +8,11 @@ function onChangeCallback() {
 }
 
 export function incButton() {
-    data.counterValue++
+    data.currentValue++
     onChangeCallback()
 }
 export function decButton() {
-    data.counterValue--
+    data.currentValue--
     onChangeCallback()
 }
 

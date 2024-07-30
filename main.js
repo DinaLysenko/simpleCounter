@@ -1,4 +1,4 @@
-import {renderCounter} from "./counter/renderCounter.js";
+import {renderCounter} from "./render/renderCounter.js";
 import {setCountValue} from "./data/data.js";
 
 renderCounter()
