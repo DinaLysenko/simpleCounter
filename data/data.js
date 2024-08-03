@@ -8,11 +8,17 @@ function onChangeCallback() {
 }
 
 export function incButton() {
-    data.currentValue++
+    if(data.currentValue < data.maxValue) {
+        data.currentValue++
+    }
     onChangeCallback()
 }
 export function decButton() {
-    data.currentValue--
+    if(data.currentValue > 0) {
+        data.currentValue--
+        console.log(data.currentValue)
+    }
+
     onChangeCallback()
 }
 
